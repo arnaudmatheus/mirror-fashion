@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header .headerOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+.header .menu {
+  display: flex;
+  gap: 10px;
+}
+.body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.body .sideBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 50vh;
+  background-color: #f5f5f5;
+  border-right: 1px solid #e5e5e5;
+}
+.body .sideBar .itens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  gap: 5px;
+}
+.body .sideBar .inputContainer {
+  display: flex;
+  height: 10vh;
+  width: 200px;
+  background-color: gray;
+  align-items: center;
+}
+
+.body .sideBar .item {
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  background-color: white;
+  width: 200px;
+}
+
+.body .sideBar .item:hover {
+  background-color: var(--gray-dark);
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+
+  padding: 20px 10px;
+  align-items: center;
+  background-image: url("../img/fundo-rodape.png");
+  justify-content: space-between;
+}
+
+.footer .iconsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
