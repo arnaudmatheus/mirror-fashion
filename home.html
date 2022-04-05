@@ -6,23 +6,28 @@
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/home.css" rel="stylesheet" />
     <script src="js/listProducts.js"></script>
+    <link href="css/reset.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
-      <h1>
-        <img src="img/logo.png" alt="Logo da Mirror Fashion" />
-      </h1>
+      <div class="headerImgContainer">
+        <img
+          class="headerImg"
+          src="img/logo.png"
+          alt="Logo da Mirror Fashion"
+        />
+      </div>
       <div class="headerOption">
         <p class="sacola">
           Nenhum item na sacola de compras
           <img src="img/sacola.png" alt="sacola vazia" />
         </p>
         <nav class="menu">
-          <a href="#">Sua Conta</a>
-          <a href="#">Lista de Desejos</a>
-          <a href="#">Cartão Fidelidade</a>
-          <a href="sobre.html">Sobre</a>
-          <a href="#">Ajuda</a>
+          <a class="link" href="#">Sua Conta</a>
+          <a class="link" href="#">Lista de Desejos</a>
+          <a class="link" href="#">Cartão Fidelidade</a>
+          <a class="link" href="sobre.html">Sobre</a>
+          <a class="link" href="#">Ajuda</a>
         </nav>
       </div>
     </header>
@@ -41,14 +46,20 @@
           <a class="item" href="#">Acessorios</a>
         </nav>
       </div>
-      <img src="img/destaque-home.png" alt="mulher de vestido" />
+      <div class="imageContainer">
+        <img
+          class="principalImage"
+          src="img/destaque-home.png"
+          alt="mulher de vestido"
+        />
+      </div>
     </main>
     <section class="products">
       <div class="new" id="newProducts">
-        <h2>Novidades</h2>
+        <h2 class="sectionTitle">Novidades</h2>
       </div>
       <div class="new" id="topSellingProducts">
-        <h2>Mais vendidos</h2>
+        <h2 class="sectionTitle">Mais vendidos</h2>
       </div>
     </section>
 

@@ -1,13 +1,27 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: 10vw;
+}
 .header {
   display: flex;
   flex-direction: row;
+  width: 60vw;
+  align-items: center;
   justify-content: space-between;
+}
+.header .headerImgContainer .headerImg {
+  max-width: 200px;
 }
 .header .headerOption {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 20px;
+  gap: 10px;
 }
 .header .menu {
   display: flex;
@@ -18,6 +32,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 60vw;
 }
 
 .body .sideBar {
@@ -29,6 +44,7 @@
   background-color: #f5f5f5;
   border-right: 1px solid #e5e5e5;
 }
+
 .body .sideBar .itens {
   display: flex;
   flex-direction: column;
@@ -39,10 +55,11 @@
 }
 .body .sideBar .inputContainer {
   display: flex;
-  height: 10vh;
+  height: 8vh;
   width: 200px;
   background-color: gray;
   align-items: center;
+  border-radius: 4px 4px 0px 0px;
 }
 
 .body .sideBar .item {
@@ -58,45 +75,63 @@
 .body .sideBar .item:hover {
   background-color: var(--light);
 }
-
+.imageContainer {
+  height: 49.5vh;
+}
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+}
 .products {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  width: 60vw;
   height: 100%;
 }
-
-#newProducts{
-  background-color:darksalmon;
+.new {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 30vh;
 }
-ul li{
-  display: inline-block;
+.sectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+#newProducts {
+  background-color: darksalmon;
+}
+ul li {
+  float: left;
+  width: 33.3%;
 }
 
-figure {
-  padding: 10px;
-  margin: auto;
+.figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-figure img {
-  width: 60%;
+.figure img {
+  width: 30%;
   height: auto;
 }
-
-figure figcaption{
-  text-align: center;
-  font-size: 12px;
+.caption {
+  font-size: 15px;
+  color: black;
 }
-#topSellingProducts{
-  background-color:cadetblue;
+#topSellingProducts {
+  background-color: cadetblue;
 }
 
 .footer {
   display: flex;
   flex-direction: row;
-
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   padding: 20px 10px;
   align-items: center;
   background-image: url("../img/fundo-rodape.png");
@@ -107,4 +142,5 @@ figure figcaption{
   display: flex;
   flex-direction: row;
   gap: 10px;
+  padding: 0 10px 0 10px;
 }
